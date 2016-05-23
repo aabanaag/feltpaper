@@ -1,0 +1,26 @@
+{
+  "name": "feltpaper",
+  "version": "0.1.0",
+  "description": "BackboneJS - RequireJS - ReactJS | Starter Kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BackboneJS",
+    "ReactJS",
+    "RequireJS",
+    "StarterKit"
+  ],
+  "author": "Alexis A. Banaag Jr.",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.3",
+    "gulp-util": "^3.0.7"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}

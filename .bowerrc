@@ -1,0 +1,9 @@
+{
+  "directory": "./components",
+  "timeout": 12000,
+  "registry": {
+    "search": [
+      "https://bower.herokuapp.com"
+    ]
+  }
+}
