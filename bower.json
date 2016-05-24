@@ -1,0 +1,31 @@
+{
+  "name": "feltpaper",
+  "description": "BackboneJS - RequireJS - ReactJS | Starter Kit",
+  "main": "index.js",
+  "authors": [
+    "Alexis A. Banaag Jr."
+  ],
+  "license": "ISC",
+  "keywords": [
+    "BackboneJS",
+    "ReactJS",
+    "RequireJS",
+    "StarterKit"
+  ],
+  "homepage": "https://github.com/aabanaag/feltpaper",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "bootstrap": "^3.3.6",
+    "requirejs": "^2.2.0",
+    "require-jade": "^0.0.3",
+    "jquery": "^2.2.4"
+  }
+}

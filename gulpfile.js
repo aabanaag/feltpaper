@@ -9,11 +9,13 @@ var gutil = require('gulp-util');
 var coffee = require('gulp-coffee');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
+var bower = require('main-bower-files');
 
 var path = {
   scripts: './src/**/*.coffee',
   styles: './src/**/*.scss',
-  html: './src/**/*.html'
+  html: './src/**/*.html',
+  components: './components/**/*.js'
 }
 
 //GULP TASK
@@ -29,7 +31,7 @@ gulp.task('script', function () {
 gulp.task('style', function () {
   return gulp.src(path.styles)
   .pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest('./dist/css'))
+  .pipe(gulp.dest('./dist'))
   .pipe(connect.reload())
 });
 
@@ -50,6 +52,11 @@ gulp.task('connect', function () {
     root: 'dist',
     livereload: true
   });
-})
+});
 
-gulp.task('default', ['connect', 'script', 'style', 'html', 'watch']);
+gulp.task('bower', function () {
+  return gulp.src(bower())
+  .pipe(gulp.dest('./dist/components'))
+});
+
+gulp.task('default', ['connect', 'bower', 'script', 'style', 'html', 'watch']);

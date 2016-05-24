@@ -1,10 +1,10 @@
 require.config
   paths:
-    'jquery': '../components/jquery/dist/jquery.min'
-    'underscore': '../components/underscore/underscore-min'
-    'backbone': '../components/backbone/backbone-min'
-    'jade': '../components/require-jade/jade'
-    'bootstrap': '../components/bootstrap/dist/js/bootstrap.min'
+    'jquery': './components/jquery'
+    'underscore': './components/underscore'
+    'backbone': './components/backbone'
+    'jade': './components/jade'
+    'bootstrap': './components/bootstrap'
 
   shim:
     'jquery': exports: 'jquery'
