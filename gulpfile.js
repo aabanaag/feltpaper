@@ -56,7 +56,7 @@ gulp.task('connect', function () {
 
 gulp.task('bower', function () {
   return gulp.src(bower())
-  .pipe(gulp.dest('./dist/components'))
+  .pipe(gulp.dest('./dist/vendor'))
 });
 
 gulp.task('default', ['connect', 'bower', 'script', 'style', 'html', 'watch']);
