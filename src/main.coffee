@@ -24,10 +24,8 @@ require.config
 
 require [
   'framework/core'
-  './router'
   'bootstrap'
-], (Core, Router) ->
+], (Core) ->
   'use strict'
 
-  new Router()
   Core.MVC.history.start()
