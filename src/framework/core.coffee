@@ -2,10 +2,11 @@ define (require) ->
   'use strict'
 
   Backbone = require('backbone')
-  $ = require('jquery')
 
   Storage = require('./storage')
+  Presenter = require('./presenter')
 
   core =
-    MVC: Backbone,
+    MVC: Backbone
     storage: Storage
+    presenter: Presenter

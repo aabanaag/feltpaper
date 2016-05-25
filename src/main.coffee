@@ -1,10 +1,10 @@
 require.config
   paths:
-    'jquery': './vendor/jquery'
-    'underscore': './vendor/underscore'
-    'backbone': './vendor/backbone'
-    'jade': './vendor/jade'
-    'bootstrap': './vendor/bootstrap'
+    'jquery': '../vendor/jquery'
+    'underscore': '../vendor/underscore'
+    'backbone': '../vendor/backbone'
+    'text': '../vendor/text'
+    'bootstrap': '../vendor/bootstrap'
 
   shim:
     'jquery': exports: 'jquery'
@@ -29,5 +29,5 @@ require [
 ], (Core, Router) ->
   'use strict'
 
-  new Router
+  new Router()
   Core.MVC.history.start()

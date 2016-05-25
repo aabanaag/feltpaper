@@ -10,16 +10,18 @@ var coffee = require('gulp-coffee');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var bower = require('main-bower-files');
+var jade = require('gulp-jade')
 
 var path = {
   scripts: './src/**/*.coffee',
   styles: './src/**/*.scss',
   html: './src/**/*.html',
+  jade: './src/**/*.jade',
   components: './components/**/*.js'
 }
 
 //GULP TASK
-gulp.task('script', function () {
+gulp.task('script', ['jade'], function () {
   return gulp.src(path.scripts)
   .pipe(coffee({
     bare: true
@@ -39,7 +41,14 @@ gulp.task('html', function () {
   return gulp.src(path.html)
   .pipe(gulp.dest('./dist'))
   .pipe(connect.reload())
-})
+});
+
+gulp.task('jade', function () {
+  return gulp.src(path.jade)
+  .pipe(jade())
+  .pipe(gulp.dest('./dist/js'))
+  .pipe(connect.reload())
+});
 
 gulp.task('watch', function () {
   gulp.watch(path.scripts, ['script']);
