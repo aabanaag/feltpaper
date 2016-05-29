@@ -10,7 +10,6 @@ var coffee = require('gulp-coffee');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var bower = require('main-bower-files');
-var jade = require('gulp-jade')
 
 var path = {
   scripts: './src/**/*.coffee',
@@ -45,7 +44,6 @@ gulp.task('html', function () {
 
 gulp.task('jade', function () {
   return gulp.src(path.jade)
-  .pipe(jade())
   .pipe(gulp.dest('./dist/js'))
   .pipe(connect.reload())
 });

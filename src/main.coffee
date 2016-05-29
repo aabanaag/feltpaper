@@ -5,6 +5,11 @@ require.config
     'backbone': '../vendor/backbone'
     'text': '../vendor/text'
     'bootstrap': '../vendor/bootstrap'
+    # CORE
+    'core': './framework/core'
+    'presenter': './framework/presenter'
+    'storage': './framework/storage'
+    'globals': './config/globals'
 
   shim:
     'jquery': exports: 'jquery'
@@ -23,7 +28,7 @@ require.config
 
 
 require [
-  'framework/core'
+  'core'
   'bootstrap'
 ], (Core) ->
   'use strict'
