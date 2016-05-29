@@ -1,10 +1,10 @@
 require.config
   paths:
-    'jquery': '../vendor/jquery'
-    'underscore': '../vendor/underscore'
-    'backbone': '../vendor/backbone'
+    'jquery': '../vendor/jquery.min'
+    'underscore': '../vendor/underscore-min'
+    'backbone': '../vendor/backbone-min'
     'text': '../vendor/text'
-    'bootstrap': '../vendor/bootstrap'
+    'bootstrap': '../vendor/bootstrap.min'
     # CORE
     'core': './framework/core'
     'presenter': './framework/presenter'
