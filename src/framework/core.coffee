@@ -3,9 +3,9 @@ define (require) ->
 
   Backbone = require('backbone')
 
-  Storage = require('./storage')
-  Presenter = require('./presenter')
-  Global = require('../config/globals')
+  Storage = require('storage')
+  Presenter = require('presenter')
+  Global = require('globals')
 
   core =
     MVC: Backbone
